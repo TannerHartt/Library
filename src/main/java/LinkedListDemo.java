@@ -197,19 +197,19 @@ public class LinkedListDemo {
         return head;
     }
 
-    public void moveTailToFront(Node head) {
-        if (head == null || head.getNext() == null) return;
-        Node secLast = null;
-        Node last = head;
-
-        while (last.getNext() != null) {
-            secLast = last;
-            last = last.getNext();
-        }
-
-        last.setNext(head);
-        head = last;
-    }
+//    public void moveTailToFront(Node head) {
+//        if (head == null || head.getNext() == null) return;
+//        Node secLast = null;
+//        Node last = head;
+//
+//        while (last.getNext() != null) {
+//            secLast = last;
+//            last = last.getNext();
+//        }
+//
+//        last.setNext(head);
+//        head = last;
+//    }
 
     /**
      * This method is used to get an element

@@ -13,15 +13,15 @@ public class LinkedListTest {
         list = new LinkedListDemo();
     }
 
-
-    @Test
-    public void moveTailToFrontTest() {
-        Node head = list.createStringList("Tanner", "Is", "Testing");
-        list.printStringList(head);
-        System.out.println();
-        list.moveTailToFront(head);
-        list.printStringList(head);
-    }
+//
+//    @Test
+//    public void moveTailToFrontTest() {
+//        Node head = list.createStringList("Tanner", "Is", "Testing");
+//        list.printStringList(head);
+//        System.out.println();
+//        list.moveTailToFront(head);
+//        list.printStringList(head);
+//    }
 
     @Test
     public void constructLinkedLink() {

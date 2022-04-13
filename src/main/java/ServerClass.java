@@ -1,6 +1,7 @@
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
 import servlets.DefaultServlet;
+import servlets.LoginPage;
 
 
 public class ServerClass {
@@ -12,6 +13,7 @@ public class ServerClass {
         server.addContext("",null);
 
         server.addServlet("", "mainServlet", new DefaultServlet()).addMapping("/*");
+        server.addServlet("", "mainServlet", new LoginPage()).addMapping("/*");
 
         try {
             server.start();
