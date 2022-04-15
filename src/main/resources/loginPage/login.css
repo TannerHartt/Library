@@ -17,7 +17,7 @@ body {
     left: 40%;
     height: 580px;
     top: calc(50% - 580px / 2);
-    background: #ffffff;
+    background: white;
     border-radius: 25px;
     text-align: center;
 }
@@ -48,14 +48,23 @@ input[type="password"] {
     overflow: hidden;
     font-family: "Scheherazade New", serif;
 }
-input[type="checkbox"] {vertical-align: middle; margin-right: 3px; margin-bottom: 3px; font-weight: bold; height: 18px; width: 18px;}
+
+input[type="checkbox"] { vertical-align: middle; margin-right: 3px; margin-bottom: 3px; font-weight: bold; height: 18px; width: 18px; }
 
 button {
-    width: 260px;height: 45px;left: 1273px;top: 780px;
-    font-family: "Sansation", sans-serif;font-style: normal;
-    font-weight: bold;font-size: 20px;
-    line-height: 28px;cursor: pointer;
-    color: #ffffff;border: none;background: rgba(125, 113, 224, 0.89);
+    width: 260px;
+    height: 45px;
+    left: 1273px;
+    top: 780px;
+    font-family: "Sansation", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    background: rgba(125, 113, 224, 0.89);
     border-radius: 25px;
 }
 

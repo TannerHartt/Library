@@ -5,7 +5,9 @@ import servlets.LoginPage;
 
 
 public class ServerClass {
+
     public static void main(String[] args) {
+
         Tomcat server = new Tomcat();
         server.setBaseDir("java.io.tmpdir");
         server.setPort(8080);
@@ -13,7 +15,7 @@ public class ServerClass {
         server.addContext("",null);
 
         server.addServlet("", "mainServlet", new DefaultServlet()).addMapping("/*");
-        server.addServlet("", "mainServlet", new LoginPage()).addMapping("/*");
+        server.addServlet("", "loginServlet", new LoginPage()).addMapping("/login");
 
         try {
             server.start();
@@ -22,6 +24,8 @@ public class ServerClass {
         } catch (LifecycleException e) {
             e.printStackTrace();
         }
+
+
 
     }
 }

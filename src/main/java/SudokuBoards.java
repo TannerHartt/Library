@@ -96,10 +96,13 @@ public class SudokuBoards {
             {5, 3 ,0, 7, 0, 0, 0, 0, 1}
     };
 
+
+
 }
 
 
 class SolvedBoards {
+
     int[][] board1Solved = {
             {7, 3, 2, 4, 5, 8, 6, 1, 9},
             {9, 5, 6, 1, 7, 3, 8, 2, 4},

@@ -22,8 +22,8 @@
 - Some examples include:
     - `racecar`  `wow`
     - `level`  `radar`
-    - `Noon`   `Anna`
     - `Madam`  `4004`
+    - `Noon`  `Anna`
 
 - This function returns true if the string is a palindrome, otherwise false.
 - The function is case resistant (not case-sensitive) and character resistant (&, %, _ ).

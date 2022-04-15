@@ -1,4 +1,6 @@
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Queue;
 
 public class Library {
 
@@ -14,6 +16,7 @@ public class Library {
         return String.valueOf(num);
     }
 
+
     /**
      * Takes in a string and reverses it, then compares it to str to check if it's a palindrome.
      * This method offers two solutions, one more readable than the other.
@@ -28,13 +31,14 @@ public class Library {
 //        }
 //        return nstr.equals(reverse.toString().toLowerCase());
 
-
         String A = str.toLowerCase();
         StringBuilder sb = new StringBuilder();
         sb.append(A);
         sb.reverse();
         return A.equalsIgnoreCase(sb.toString());
     }
+
+
 
     /**
      * A simple method used to reverse the characters of any string, iteratively.
@@ -50,10 +54,12 @@ public class Library {
         return nstr;  // return the reversed string.
     }
 
+
+
     /**
      * An iterative solution to the Palindrome problem.
      * @param str String to be checked if it's a palindrome.
-     * @return True if the string is a palindrome.
+     * @return True if the string is a palindrome, false if otherwise.
      */
     public boolean reversePalindrome(String str) {
         String nstr = "";  // Temp string to alter
@@ -63,6 +69,7 @@ public class Library {
         }
         return nstr.equalsIgnoreCase(str);
     }
+
 
     /**
      * A recursive solution to the Fibonacci Series.
@@ -77,6 +84,8 @@ public class Library {
         else // Recursive call
             return fibonacciR(n - 1) + fibonacciR(n - 2);
     }
+
+
 
     /**
      * An iterative solution to the Fibonacci Sequence that supports negative numbers.
@@ -102,12 +111,15 @@ public class Library {
     }
 
 
+
     /**
      * A recursive solution to a fibonacci sequence using a ternary operator.
      * @param n The desired index in the fibonacci sequence.
      * @return The value in the fibonacci sequence that is in place n.
      */
     public int factorialR(int n) { return (n == 0 || n == 1)  ?  1 : n * factorialR(n - 1); }
+
+
 
 
     /**
@@ -123,6 +135,7 @@ public class Library {
 
     public String partString(String stringToParse, int start, int end) { // Takes in a String and returns a substring using the specified start and end variable
         return stringToParse.substring(start,end); }
+
 
     public String[] listRepeating (String[] list) {
         String[] newList = new String[list.length];
@@ -143,6 +156,7 @@ public class Library {
 
         return newList;
     }
+
 
 
 
