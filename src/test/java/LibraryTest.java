@@ -2,11 +2,9 @@ import jdk.jfr.StackTrace;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -76,6 +74,21 @@ public class LibraryTest {
         assertEquals("TolleHhereFrdnei", test.reverseCharInString("HelloThereFriend", 6));
         assertEquals("HiThere", test.reverseCharInString("iHThree", 2));
         assertEquals("123456", test.reverseCharInString("213465", 2));
+    }
+
+
+    @Test
+    public void testst() {
+
+    // x = 0 1 2 3         for loop #
+        // 0 1 2 3 4    index
+        // H e l l o    word
+        // B i t c h    word
+
+        // h c t i B           // reverse
+        // h             // v
+        // h c t i B            v + reverse
+
     }
 
 

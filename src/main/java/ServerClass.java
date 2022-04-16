@@ -1,11 +1,15 @@
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
-import servlets.DefaultServlet;
+import servlets.MainServlet;
 import servlets.LoginPage;
+import servlets.ResetPasswordServlet;
 
 
 public class ServerClass {
 
+    /*
+    Simple server class used to create a local server for testing. Starts and controls mappings of the server.
+     */
     public static void main(String[] args) {
 
         Tomcat server = new Tomcat();
@@ -14,8 +18,9 @@ public class ServerClass {
         server.getConnector();
         server.addContext("",null);
 
-        server.addServlet("", "mainServlet", new DefaultServlet()).addMapping("/*");
+        server.addServlet("", "mainServlet", new MainServlet()).addMapping("/*");
         server.addServlet("", "loginServlet", new LoginPage()).addMapping("/login");
+        server.addServlet("", "forgotPassword", new ResetPasswordServlet()).addMapping("/reset");
 
         try {
             server.start();
