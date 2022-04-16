@@ -3,15 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./login.css">
     <link rel="icon" href="../images/favicon.ico">
 </head>
+<style>
+    body { background-image: linear-gradient(#480339, #620141); overflow-x: hidden; width: 100vw; height: 100vh; display: flex; margin: auto; justify-content: center; align-items: center; }
+    .page {
+        position: absolute;
+        width: 360px;
+        left: 40%;
+        height: 580px;
+        top: calc(50% - 580px / 2);
+        background: white;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    .title { font-style: normal; font-weight: bold; font-size: 25px; line-height: 145px; align-items: center; font-family: "Sansation" , sans-serif; color: #575444; }
+
+    * { margin: 0;padding: 0;box-sizing: border-box; }
+
+    .contact-container { background-image: url("../images/icon.jpg");background-size: cover;height: 100vh;align-items: center; }
+
+    .logo {width: 120px;height: 120px;margin-top: -40px;}
+    ::placeholder {color:#85b6ff; font-size: 18px;}
+    .icon { position: absolute; padding: 24px 32px; height: 75px; width: 90px; }
+    input[type="email"],
+    input[type="password"] {
+        outline: none;
+        background: none;
+        font-size: 20px;
+        color: #85b6ff;
+        padding: 20px 10px 20px 5px;
+        border: 2px solid #568aee;
+        width: 280px;
+        height: 45px;
+        margin: 15px;
+        border-radius: 25px;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden;
+        font-family: "Scheherazade New", serif;
+    }
+
+    input[type="checkbox"] { vertical-align: middle; margin-right: 3px; margin-bottom: 3px; font-weight: bold; height: 18px; width: 18px; }
+
+    button {
+        width: 260px;
+        height: 45px;
+        left: 1273px;
+        top: 780px;
+        font-family: "Sansation", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        cursor: pointer;
+        color: #ffffff;
+        border: none;
+        background: rgba(125, 113, 224, 0.89);
+        border-radius: 25px;
+    }
+
+    .link{ text-align: center; display: block; margin: 18px; color: #71a1bd; font-family: "Scheherazade New", serif; font-weight: bold; text-decoration: none;}
+
+    .keepme {margin: 15px; color: #71a1bd; font-family: "Scheherazade New", serif; font-weight: bold;}
+
+</style>
 <body>
 
 <div class="contact-container">
-    <div class="right">
+    <div class="page">
         <h1 class="title">Sign into Account</h1>
-        <img class="logo" src="../images/icon.jpg" alt="">
+        <img class="logo" src="../images/icon.jpg" alt="Image not found">
         <div class="form-container">
             <div class="username">
 
@@ -32,7 +96,7 @@
                 Keep Me Logged In
             </div>
             <button type="submit">Go!</button>
-            <a href="#" class="link">Forgot Password?</a>
+            <a href="http://localhost:8080/reset" class="link">Forgot Password?</a>
         </div>
     </div>
 </div>

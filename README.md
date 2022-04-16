@@ -29,6 +29,19 @@
 - The function is case resistant (not case-sensitive) and character resistant (&, %, _ ).
 
 
+### Factorial
+- Factorial, in mathematics, is described as the product of all positive integers less than or equal
+  to a given integer.
+- Factorial is often denoted using the `!` following the given number.
+- For Example:
+  - `10! = 1 x 2 x 3 x 4 x 5 x 6 x 7 x 8 x 9 x 10`
+  - `7! = 1 x 2 x 3 x 4 x 5 x 6 x 7`
+  - `3! = 1 x 2 x 3`
+  
+- Factorial numbers grow exponentially, so they quickly get to be very big numbers.
+- This program offers an iterative solution and a recursive solution.
+
+
 ### Sudoku Solver
 - This function takes in a Sudoku board in the form of a 2D int array.
 - Inputted board must be a valid solvable Sudoku board for the function to work.

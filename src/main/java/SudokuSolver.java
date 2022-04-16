@@ -70,7 +70,7 @@ public class SudokuSolver {
     }
 
     /**
-     * A simple utility method that gets called everytime a number is tried in the board that checks in the attempted number
+     * A simple utility method that gets called everytime a number is tried in the board that checks if the attempted number
      * is already present in the row, column, and 3x3 quadrant.
      * It works by calling the other helper methods for each check.
      * @param board The board that's being solved.
