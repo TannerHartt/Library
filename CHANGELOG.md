@@ -100,3 +100,4 @@ Sunday, April 17th
 - Began use of organized, verified commits and pull requests into main branch.
 - Started working ideas for a database of books.
 - Added postgres dependency to build.gradle file.
+- Fixed readme header issues.
