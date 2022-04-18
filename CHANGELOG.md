@@ -94,6 +94,7 @@ Saturday, April 16th
 Sunday, April 17th
 ```
 - Restructuring of project files for organization purposes.
+- Began organizing into packages and directories.
 - Added two more servlets that are linked together for future advancements.
 - Created an animated drop down menu intended for main page use.
 - Began use of organized, verified commits and pull requests into main branch.

@@ -32,7 +32,5 @@ public class ServerClass {
             e.printStackTrace();
         }
 
-
-
     }
 }

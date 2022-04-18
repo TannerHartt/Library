@@ -1,8 +1,8 @@
-# My Function demos.Library
+# My Function Library
 
 
 
-### demos.LinkedListDemo
+### LinkedList Demo
 - Contains functions that can be used on linked lists that aren't in default Java library.
 - List - a collection of elements (data nodes) where insertion order is respected.
 - demos.LinkedListDemo - each node holds data, and a reference to the next node.
