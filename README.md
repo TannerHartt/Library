@@ -1,11 +1,11 @@
-# My Function Library
+# My Function demos.Library
 
 
 
-### LinkedListDemo
+### demos.LinkedListDemo
 - Contains functions that can be used on linked lists that aren't in default Java library.
 - List - a collection of elements (data nodes) where insertion order is respected.
-- LinkedListDemo - each node holds data, and a reference to the next node.
+- demos.LinkedListDemo - each node holds data, and a reference to the next node.
 
 ### Fibonacci Series
 - A sequence in which each number is the sum of the two preceding numbers.
