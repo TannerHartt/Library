@@ -1,3 +1,5 @@
+package demos;
+
 import java.util.HashMap;
 
 public class HashMapsDemo {

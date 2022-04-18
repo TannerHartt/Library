@@ -1,4 +1,5 @@
-import java.util.LinkedList;
+package demos;
+
 import java.util.Objects;
 
 public class LinkedListDemo {
@@ -12,7 +13,7 @@ public class LinkedListDemo {
      * @return The list with the new inserted element.
      */
     public Node insertAfter(Node head, int element, int target) {
-        // Find the target Node first.
+        // Find the target demos.Node first.
         Node curr = head;
         while (curr != null) {
             if (curr.getElement() == target) {
@@ -27,7 +28,7 @@ public class LinkedListDemo {
             return head;
         }
 
-        // Otherwise, create a new Node for the element and wire the next pointers up so that curr is followed by
+        // Otherwise, create a new demos.Node for the element and wire the next pointers up so that curr is followed by
         // newNode, and newNode is followed by what used to come after curr.
         Node newNode = new Node(element);
         newNode.setNext(curr.getNext());
@@ -44,7 +45,7 @@ public class LinkedListDemo {
      * @return The list with the new inserted element.
      */
     public Node insertBefore(Node head, int element, int target) {
-        // Find the target Node first. This time, we need to keep track of the previous Node as well, since we need to
+        // Find the target demos.Node first. This time, we need to keep track of the previous demos.Node as well, since we need to
         // insert element before the target node.
         Node prev = null;
         Node curr = head;
@@ -68,7 +69,7 @@ public class LinkedListDemo {
             head = newNode;
         } else {
             // Otherwise, we are inserting element in the middle or end of the list, in which case newNode should set
-            // its next Node to be target, and prev (the Node that used to be just before target) should set its next
+            // its next demos.Node to be target, and prev (the demos.Node that used to be just before target) should set its next
             // node to be the new node.
             newNode.setNext(curr);
             prev.setNext(newNode);
@@ -83,7 +84,7 @@ public class LinkedListDemo {
      * @return The head node with the target element removed from the list.
      */
     public Node removeElement(Node head, int target) {
-        // When removing a Node, we need access to the Node that comes before it to change its next pointer, so we use
+        // When removing a demos.Node, we need access to the demos.Node that comes before it to change its next pointer, so we use
         // the prev/curr loop again.
         Node prev = null;
         Node curr = head;
@@ -117,7 +118,7 @@ public class LinkedListDemo {
      * @return The head node with the target element removed from the list.
      */
     public Node removeStringElement(Node head, String target) {
-        // When removing a Node, we need access to the Node that comes before it to change its next pointer, so we use
+        // When removing a demos.Node, we need access to the demos.Node that comes before it to change its next pointer, so we use
         // the prev/curr loop again.
         Node prev = null;
         Node curr = head;
@@ -144,7 +145,7 @@ public class LinkedListDemo {
 
     /**
      * Utility method used to print each node in an integer linked list.
-     * @param head The first Node in the linked list to be printed.
+     * @param head The first demos.Node in the linked list to be printed.
      */
     public void printIntList(Node head) {
         Node curr = head;
@@ -157,7 +158,7 @@ public class LinkedListDemo {
 
     /**
      * Utility method used to print each node in a String linked list.
-     * @param head The first Node in the desired linked list to be printed.
+     * @param head The first demos.Node in the desired linked list to be printed.
      */
     public void printStringList(Node head) {
         Node curr = head;
@@ -197,10 +198,10 @@ public class LinkedListDemo {
         return head;
     }
 
-//    public void moveTailToFront(Node head) {
+//    public void moveTailToFront(demos.Node head) {
 //        if (head == null || head.getNext() == null) return;
-//        Node secLast = null;
-//        Node last = head;
+//        demos.Node secLast = null;
+//        demos.Node last = head;
 //
 //        while (last.getNext() != null) {
 //            secLast = last;

@@ -1,7 +1,7 @@
+import demos.LinkedListDemo;
+import demos.Node;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.LinkedList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,7 +16,7 @@ public class LinkedListTest {
 //
 //    @Test
 //    public void moveTailToFrontTest() {
-//        Node head = list.createStringList("Tanner", "Is", "Testing");
+//        demos.Node head = list.createStringList("Tanner", "Is", "Testing");
 //        list.printStringList(head);
 //        System.out.println();
 //        list.moveTailToFront(head);
