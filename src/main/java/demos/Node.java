@@ -1,4 +1,6 @@
-public class Node { // Node constructor class
+package demos;
+
+public class Node { // demos.Node constructor class
     private int element;
     private String word;
     private Node next;
