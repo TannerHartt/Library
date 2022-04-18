@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
+<style>
+    .pagetop {
+        width: 100vw;
+        height: 90px;
+        background-color: #220733;
+        position: absolute;
+        top: 0;
+    }
+    .search-bar {
+        position: absolute;
+        height: 50px;
+        width: 250px;
+        border-radius: 10px;
+        left: 75%;
+        top: 23px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+</style>
 <body>
+<div class="pagetop">
+    <label>
+        <input type="search" class="search-bar" placeholder="Search...">
+    </label>
+</div>
 
 
-<button id="glass" class="button" onclick="goToUrl('http://localhost:8080/login')">Login</button>
-<button>
-    <span class="button_top"> Button
-    </span>
+
+
+<button class="button2" onclick="goToUrl('http://localhost:8080/login')">
+    <span class="button_top">Login</span>
 </button>
 
 </body>
