@@ -1,3 +1,5 @@
+package games;
+
 public class SudokuSolver {
 
     public final int gridSize = 9;

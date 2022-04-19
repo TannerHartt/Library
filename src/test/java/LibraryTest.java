@@ -20,15 +20,6 @@ public class LibraryTest {
     }
 
 
-
-    @Test
-    public void listRepeatingTest() {
-        String[] list = {"Tanner", "Kevin", "Jojo"};
-        System.out.println(Arrays.toString(test.listRepeating(list)));
-    }
-
-
-
     @Test
     public void factorialITest() {
         assertEquals(1, test.factorialI(1));
@@ -68,28 +59,12 @@ public class LibraryTest {
     }
 
     @Test
-    public void test() {
+    public void reverseInString() {
         assertEquals("olleHThereneirFd", test.reverseCharInString("HelloThereFriend", 5));
         assertEquals("TolleHhereFrdnei", test.reverseCharInString("HelloThereFriend", 6));
         assertEquals("HiThere", test.reverseCharInString("iHThree", 2));
         assertEquals("123456", test.reverseCharInString("213465", 2));
     }
-
-
-    @Test
-    public void testst() {
-
-    // x = 0 1 2 3         for loop #
-        // 0 1 2 3 4    index
-        // H e l l o    word
-        // B i t c h    word
-
-        // h c t i B           // reverse
-        // h             // v
-        // h c t i B            v + reverse
-
-    }
-
 
 
     @Test
