@@ -1,9 +1,5 @@
 /* Sets padding and margin properties to 0 for all elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 /* Setting base properties for the nav tag. */
 nav {
@@ -53,9 +49,7 @@ nav {
 /* Changes cursor to pointer when hovering the burger div, when clicked it calls the animation from js file */
 .burger{ display: none; cursor: pointer; }
 
-/*
-Tablet size, when screen hits 768px or less these properties override the existing versions.
- */
+/* Tablet size, when screen hits 768px or less these properties override the existing versions. */
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -75,14 +69,11 @@ Tablet size, when screen hits 768px or less these properties override the existi
         transition: transform 0.5s ease-in;
     }
     .nav-links li { opacity: 0; }
-
     .burger { display: block; }
 }
 /* Sets override properties for screen sizes 1024px or smaller (until next check at 768px) */
 @media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%;
-    }
+    .nav-links { width: 60%; }
 }
 
 /* Creates a selector for javascript to create animation for links to come in with animation. */
@@ -97,18 +88,13 @@ Tablet size, when screen hits 768px or less these properties override the existi
     }
 }
 
-/* Creates animations for the 'burger' lines / menu button when toggled.
-   Makes the lines turn to an 'X' when toggled open, can click to close menu.
+/*
+Creates animations for the 'burger' lines / menu button when toggled.
+Makes the lines turn to an 'X' when toggled open, can click to close menu.
  */
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2 {
-    opacity: 0;
-}
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
+.toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); }
+.toggle .line2 { opacity: 0; }
+.toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); }
 
 /* Adds sliding animation  */
 .nav-active { transform: translateX(0%); }
