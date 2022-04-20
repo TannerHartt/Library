@@ -19,11 +19,7 @@ nav {
 }
 
 /* Properties for the links in the unordered list in the navbar. => Home, About, Work, Projects links on bar. */
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-}
+.nav-links { display: flex; justify-content: space-around; width: 40%; }
 
 /* Gives properties to all 'a' tags inside the nav-links list */
 .nav-links a{
