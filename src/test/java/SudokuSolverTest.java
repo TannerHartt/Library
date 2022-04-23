@@ -2,6 +2,8 @@ import games.SudokuSolver;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SudokuSolverTest {
@@ -56,6 +58,9 @@ public class SudokuSolverTest {
         } else {
             System.out.println("Invalid board");
         }test.printBoard(boards.board1);
+
+
+        System.out.println(Arrays.deepToString(boards.board2));
     }
 
     @Test

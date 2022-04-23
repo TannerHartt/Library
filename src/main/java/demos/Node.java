@@ -31,7 +31,12 @@ public class Node { // demos.Node constructor class
         this.next = next;
     }
 
-    public void setWord(String word) {this.word = word;}
+    public void setWord(String word) { this.word = word; }
 
-    public String getWord() {return word;}
+    public String getWord() { return word; }
 }
+
+
+
+
+
