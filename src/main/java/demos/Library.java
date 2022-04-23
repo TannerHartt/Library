@@ -15,8 +15,6 @@ public class Library {
     }
 
 
-
-
     /**
      * Takes in a string and reverses it, then compares it to str to check if it's a palindrome.
      * This method offers two solutions, one more readable than the other.

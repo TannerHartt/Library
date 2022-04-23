@@ -1,9 +1,7 @@
+package servlets;
+
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
-import servlets.BookLibrary;
-import servlets.MainServlet;
-import servlets.LoginPage;
-import servlets.ResetPasswordServlet;
 
 
 public class ServerClass {
@@ -20,7 +18,7 @@ public class ServerClass {
         server.addContext("",null);
 
         server.addServlet("", "mainServlet", new MainServlet()).addMapping("/*");
-        server.addServlet("", "loginServlet", new LoginPage()).addMapping("/login");
+        server.addServlet("", "loginServlet", new LoginServlet()).addMapping("/login");
         server.addServlet("", "forgotPassword", new ResetPasswordServlet()).addMapping("/reset");
         server.addServlet("", "bookLibrary", new BookLibrary()).addMapping("/Book-demos.Library");
 
@@ -33,4 +31,7 @@ public class ServerClass {
         }
 
     }
+
+
+
 }

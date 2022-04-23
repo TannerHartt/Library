@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 
-public class LoginPage extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
