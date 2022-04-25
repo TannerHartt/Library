@@ -14,13 +14,13 @@ public class MainServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String filename = req.getPathInfo().replaceFirst("/", "");
         String resourceDir = "mainPage";
-        if (filename.equals("/") || filename.equals("")) filename = "index.html";
+        if (filename.equals("/") || filename.equals("")) filename = "ServerHomePage/index.html";
         InputStream file = getClass().getClassLoader().getResourceAsStream(filename);
 
         if (file == null) {
             resp.setStatus(404);
             try {
-                file.getClass().getClassLoader().getResourceAsStream("index.html");
+                file.getClass().getClassLoader().getResourceAsStream("ServerHomePage/index.html");
             } catch (NullPointerException e) {
                 e.printStackTrace();
             }
