@@ -24,7 +24,7 @@ tabs.forEach(tab => {
 
 // ============== Dark Theme Switcher ===============
 
-const themeButton = document.getElementById('theme-button')
+const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'ri-sun-line';
 const selectedTheme = localStorage.getItem('selected-theme');

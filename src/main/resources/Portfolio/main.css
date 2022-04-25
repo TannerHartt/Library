@@ -526,5 +526,7 @@ img {
     }
     .footer__copy {
         margin: 4.5rem 0 2.5rem;
+        color: #000000;
     }
+
 }
