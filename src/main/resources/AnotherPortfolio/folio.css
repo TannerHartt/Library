@@ -214,3 +214,19 @@ img {
     box-shadow: 0 10px 36px rgba(0,0,0, .15);
 }
 
+.about_container {
+    row-gap: 2rem;
+    text-align: center;
+}
+.about_subtitle {
+    margin-bottom: var(--mb-2);
+}
+.about_img {
+    justify-self: center;
+}
+.about_img img {
+    width: 200px;
+    border-radius: .5rem;
+}
+
+
