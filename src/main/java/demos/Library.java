@@ -65,6 +65,8 @@ public class Library {
             char ch = str.charAt(i);    // Looping through str one character at a time.
             nstr = ch + nstr;   // Storing it in our temp string to return
         }
+        nstr = nstr.replaceAll(" ", ""); // replaces all spaces with empty character
+        str = str.replaceAll(" ", ""); // replaces all spaces with an empty character
         return nstr.equalsIgnoreCase(str);
     }
 
@@ -109,13 +111,13 @@ public class Library {
     }
 
 
-
     /**
      * A recursive solution to a fibonacci sequence using a ternary operator.
      * @param n The desired index in the fibonacci sequence.
      * @return The value in the fibonacci sequence that is in place n.
      */
     public int factorialR(int n) { return (n == 0 || n == 1)  ?  1 : n * factorialR(n - 1); }
+
 
 
 
