@@ -1,0 +1,90 @@
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #fafafa;
+  }
+  #navbarTop {
+    width: 100vw;
+    height: 4.7rem;
+    background-color: #ffffff;
+    top: 0;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.09);;
+  }
+
+  .searchBar {
+    box-sizing: border-box;
+    border-radius: 3px;
+    left: 45%;
+    position: absolute;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+    top: 2rem;
+  }
+  .logoPic {
+    height: 29px;
+    width: 29px;
+    position: absolute;
+    top: 7%;
+    left: 3px;
+  }
+  .verticalBar {
+    width: 1px;
+    height: 33px;
+    background-color: #000000;
+    position: absolute;
+    left: 35%;
+  }
+  .logos_container {
+    position: absolute;
+    left: 17%;
+    right: 71.1%;
+    top: 22px;
+    bottom: 27.82%;
+    height: 34px;
+    width: 166px;
+  }
+  .Pixelgram {
+    height: 25px;
+    width: 80px;
+    position: absolute;
+    top: 9px;
+    left: 47%;
+  }
+.userImg {
+  position: absolute;
+
+}
+.login {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 1rem;
+  left: 85%;
+  background-color: #ffffff;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+}
+</style>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>NavBar</title>
+</head>
+
+<header id="navbarTop">
+  <div class="logos_container">
+      <img src="../../PixelgramLogo.png" alt="" class="logoPic">
+      <div class="verticalBar"></div>
+      <img src="../../Pixelgram.png" alt="" class="Pixelgram">
+  </div>
+
+  <input class="searchBar" type="search" placeholder="Search">
+  <div>
+      <i class="ri-user-3-line"></i>
+  </div>
+  <button type="button" class="login" (click)="goTo('#')">Login</button>
+</header>
